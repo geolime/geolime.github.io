@@ -123,10 +123,10 @@ async function initMap() {
       sources: {
         carto: {
           type: "raster",
-          tiles: [
-            "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-            "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
-            "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+            tiles: [
+            "https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png?key=cb1_2b7j_1_2d2530ede0f1711f2ffa7ce4",
+            "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png?key=cb1_2b7j_1_2d2530ede0f1711f2ffa7ce4",
+            "https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png?key=cb1_2b7j_1_2d2530ede0f1711f2ffa7ce4"
           ],
           tileSize: 256,
           attribution: "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
