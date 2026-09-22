@@ -211,4 +211,12 @@ async function initMap() {
   });
 }
 
-initMap();
+initMap().catch((err) => {
+  const pending = document.querySelector(".map-pending");
+  if (pending) {
+    pending.textContent = String(err.message).includes("WebGL")
+      ? "MAP UNAVAILABLE: this browser could not start WebGL. Try another browser or enable hardware acceleration."
+      : "MAP COULD NOT LOAD. See the browser console for details.";
+  }
+  throw err;
+});

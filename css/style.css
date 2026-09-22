@@ -438,3 +438,5 @@ a:hover { text-decoration: underline; }
 .footer-logo { width: 16px; height: 16px; }
 
 .hero-hint { flex: 1 1 100%; margin-top: 0; }
+
+.map-pending { padding: 1rem; text-align: center; }
